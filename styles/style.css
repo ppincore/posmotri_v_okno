@@ -67,6 +67,7 @@ ol {
   gap: 40px;
 }
 .result {
+  width: 711px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -178,6 +179,7 @@ ol {
   cursor: pointer;
 }
 .content__video-card-title {
+  text-transform: uppercase;
 }
 .content__video-card-description {
   font-size: 18px;
@@ -194,6 +196,26 @@ ol {
 .more-button {
   width: 100%;
 }
+
+/* ACTIVE */
+/* HOVER */
+.content__video-card-description-container:hover{
+  text-decoration: underline;
+text-underline-offset: 5px;
+}
+button:hover{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.search-form__label:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.search-form__textfield:hover{
+  outline: none;
+}
+/* FOCUS */
+
 /* HIDE PATTERN */
 .visually-hidden {
   position: absolute;
