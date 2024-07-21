@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -45,7 +45,7 @@ ol {
   height: 34px;
   background-color: transparent;
   border: 1px solid #fff;
-  font-family: "Fira Sans Condensed", Arial, sans-serif;;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   color: #fff;
   font-weight: 700;
   font-size: 18px;
@@ -62,9 +62,8 @@ ol {
 /* RESULT SECTION */
 .search-form {
   display: flex;
+  padding-bottom: 2px;
   justify-content: space-between;
-  align-items: end;
-  gap: 40px;
 }
 .result {
   width: 711px;
@@ -96,7 +95,7 @@ ol {
 .search-form__label {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   cursor: pointer;
 }
 .search-form__textfield {
@@ -105,6 +104,7 @@ ol {
   font-size: 18px;
   background-color: transparent;
   border: none;
+  color: #fff;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
   min-width: 225px;
@@ -130,7 +130,7 @@ ol {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 2px;
-
+  position: relative;
 }
 .content__details {
   width: 100%;
@@ -138,11 +138,12 @@ ol {
 }
 
 .title {
-  font-family: "Oswald", Arial, sans-serif;;
+  font-family: "Oswald";
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .content__accent {
   color: #545050;
@@ -173,6 +174,7 @@ ol {
 .content__video-card-title {
   font-size: 30px;
   text-transform: uppercase;
+  font-size: 30px;
 }
 .content__video-card-description {
   font-size: 18px;
@@ -206,6 +208,12 @@ input[type="checkbox"]:checked + span {
   align-items: center;
   margin: 2px;
 }
+.search-form__textfield:active {
+  outline: 1px solid #fff;
+  cursor: text;
+  text-decoration: none !important;
+  border-bottom: 0px;
+}
 /* HOVER */
 .content__card-link:hover {
   text-decoration: underline;
@@ -214,34 +222,36 @@ input[type="checkbox"]:checked + span {
 button:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
-} 
+}
 .search-form__label:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 /* FOCUS */
 button:focus {
-  outline:none;
+  outline: none;
 }
 button:focus-visible {
-  outline:1px solid #fff;
+  outline: 1px solid #fff;
   outline-offset: 1px;
 }
 .search-form__textfield:focus {
   outline: none;
+  text-decoration: none;
 }
 .search-form__textfield:focus-visible {
-  outline:1px solid #fff;
+  outline: 1px solid #fff;
   outline-offset: 1px;
+  text-decoration: none;
 }
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-.content__card-link:focus{
+.content__card-link:focus {
   outline: none;
 }
-.content__card-link:focus-visible{
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
 /* HIDE PATTERN */
